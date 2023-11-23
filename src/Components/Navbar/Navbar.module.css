@@ -1,0 +1,69 @@
+header {
+  padding: 10px 50px;
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.logoWrapper {
+  height: 80px;
+  width: 100px;
+}
+
+.logoWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+nav ul b {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+header button {
+  padding: 10px 30px;
+  color: #b51827;
+  border: 1px solid #e1e3e5;
+  outline: none;
+  background-color: white;
+
+  position: relative;
+  isolation: isolate;
+}
+
+header button:hover {
+  color: white;
+}
+
+header button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #fcb116;
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+header button:hover::after {
+  transition: width 0.6s cubic-bezier(0.58, 1.65, 0.55, 0.65);
+  width: 100%;
+}
+header button::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  background-image: url("../../assets/buttonimage.svg");
+  background-size: contain;
+  background-position: center;
+  height: 15px;
+  width: 35px;
+  background-repeat: no-repeat;
+}
