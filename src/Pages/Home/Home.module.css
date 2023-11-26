@@ -1,42 +1,94 @@
-/* .triangleUp img {
-  position: absolute;
-  z-index: 1;
-
-  border: 150px solid transparent;
-  border-top: 0;
-  border-bottom-width: 300px;
+.home {
+  z-index: -1;
 }
-.imageKitchen {
-  background-color: aqua;
-  position: relative;
-}*/
-.test {
-  background-color: #b51827;;
+.firstSection {
+  background-color: #b51827;
   width: 100%;
   height: 500px;
   color: white;
   position: relative;
 }
-.test p{
+.firstSection p {
   padding-left: 800px;
   padding-right: 50px;
- padding-top: 150px;
+  padding-top: 150px;
+}
+.pri1,
+.pri2,
+.pri3,
+.pri4,
+.pri5 {
+  text-align: center;
 }
 .triangleUp {
   position: absolute;
-  top: 0;
+  top: -1;
   bottom: 0;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   width: 1000px;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
- 
 }
 .triangleUp img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.pri1,.pri2,.pri3,.pri4,.pri5{
-  text-align: center;
+
+.lineHeight {
+  margin-left: 100px;
+  width: 1px;
+  height: 100px;
+  background-color: #b51827;
+}
+.secondSection {
+  padding: 120px 200px;
+}
+
+.secondSectionHeading h1 {
+  font-size: 50px;
+  font-weight: lighter;
+}
+.box {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+}
+.box:hover {
+  border: 5px solid #b51827;
+}
+.box img:hover {
+  opacity: 0.5;
+}
+.box .underImage:hover{
+  align-items: center;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+/* .box img::after {
+  content: "";
+  bottom: 0;
+  left: 4px;
+  position: absolute;
+  background-image: url("../../assets/kitchen3.png");
+  border: 2px solid rgb(0, 255, 115);
+  background-size: contain;
+  background-position: center;
+  height: 15px;
+  width: 35px;
+  background-repeat: no-repeat;
+ z-index: 999;
+} */
+.underImage{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 70px;
 }

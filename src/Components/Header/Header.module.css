@@ -1,0 +1,146 @@
+header {
+  top: 0;
+  padding: 10px 50px;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+  width: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid #e1e3e5;
+}
+
+.logoWrapper {
+  height: 80px;
+  width: 100px;
+}
+
+.logoWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.onBigScreen {
+  display: block;
+}
+.onBigScreen ul b {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+header button {
+  padding: 10px 30px;
+  color: #b51827;
+  border: 1px solid #e1e3e5;
+  outline: none;
+  background-color: white;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.contactButton button:hover {
+  color: white;
+}
+
+.contactButton button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #fcb116;
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+.contactButton button:hover::after {
+  transition: width 0.6s cubic-bezier(0.58, 1.65, 0.55, 0.65);
+  width: 100%;
+}
+.contactButton button::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  background-image: url("../../assets/buttonimage.svg");
+  background-size: contain;
+  background-position: center;
+  height: 15px;
+  width: 35px;
+  background-repeat: no-repeat;
+}
+.onSmallScreen {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+.reorderMenu {
+  display: none;
+}
+.reorderMenuDisplay {
+ 
+  display: block;
+  position: absolute;
+  background-color: blue;
+  left: 0;
+ 
+  height: 100%;
+  transform: -100px 0px 0px;
+  
+  width: 100%;
+}
+.closeIcon{
+  font-size: 30px;
+  display: flex;
+  justify-content:flex-end;
+  padding-bottom: 30px;
+}
+.reorderMenuDisplay nav{
+  background-color: blue;
+}
+.reorderMenuDisplay nav ul li{
+   padding: 30px 0px;
+   
+}
+.reorderMenuDisplay nav ul {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+.longLine {
+  width: 100%;
+  height: 2px;
+  background-color: #e1e3e5;
+}
+@media screen and (max-width: 1000px) {
+  .onBigScreen {
+    display: none;
+  }
+  .onSmallScreen {
+    display: block;
+  }
+  .contactButton {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .onBigScreen ul b {
+    font-size: 15px;
+    gap: 10px;
+  }
+  .onBigScreen {
+    display: block;
+  }
+  .onSmallScreen {
+    display: none;
+  }
+  .contactButton {
+    display: block;
+  }
+}
