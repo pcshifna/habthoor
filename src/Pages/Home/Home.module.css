@@ -168,22 +168,22 @@
   .firstSection {
  
  
-  height: 180px;
+  height: 200px;
   
   
 }
 .contentWrapper  {
-  padding-left: 180px;
+  padding-left: 140px;
   padding-right: 8px;
   padding-top: 130px;
-  font-size: 4px;
+  font-size: 5px;
 }
 
 .triangleUp {
   
  
-  width: 200px;
-  height: 90px;
+  width: 160px;
+  height: 110px;
  
 }
 
