@@ -1,0 +1,19 @@
+.side-drawer {
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  z-index: 999;
+  translate: 100%;
+  transition: 10s linear;
+  background-color: bisque;
+}
+
+.sideDrawerActive {
+  translate: 0;
+}
+
+@media (max-width: 640px) {
+  .side-drawer {
+    visibility: visible;
+  }
+}

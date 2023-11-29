@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className={style.home}>
       <section className={style.firstSection}>
-        <p>
+        <div>
           <div className={style.pri1}>
             <h2>Habtoor International</h2>
           </div>
@@ -38,7 +38,7 @@ const Home = () => {
               Abdul Aziz Abdul Aziz
             </h3>
           </div>
-        </p>
+        </div>
 
         <div className={style.triangleUp}>
           <Swiper

@@ -7,15 +7,13 @@ import Layout from "./Components/Layout";
 import Home from "./Pages/Home/index";
 function App() {
   return (
-    <div className="app">
+    <React.Fragment>
       <Routes>
-       
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home/>}/>
-          
+          <Route path="/" element={<Home />} />
         </Route>
       </Routes>
-    </div>
+    </React.Fragment>
   );
 }
 

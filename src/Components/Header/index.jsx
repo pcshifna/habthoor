@@ -4,11 +4,8 @@ import style from "./Header.module.css";
 import ReorderIcon from "@mui/icons-material/Reorder";
 import { Link } from "react-router-dom";
 
-function Header() {
-  const [click,setClick]=useState(false);
-  const handleClick =()=>{
-    setClick(!click);
-  }
+function Header({handleClick}) {
+ 
   return (
     <header className={style.header}>
       <div className={style.logoWrapper}>
@@ -53,48 +50,9 @@ function Header() {
           <b>Contact Us</b>
         </button>
       </div>
-      <div
-        className={click ? style["reorderMenuDisplay"] : style["reorderMenu"]}
-      >
-        <div className={style.closeIcon}>
-          <button type="submit" onClick={handleClick}>
-            X
-          </button>
-        </div>
-        <nav>
-          <ul>
-            <div className={style.longLine}></div>{" "}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <div className={style.longLine}></div>
-            <li>
-              <Link to="/">About Us</Link>
-            </li>{" "}
-            <div className={style.longLine}></div>
-            <li>
-              <Link to="/">Services</Link>
-            </li>{" "}
-            <div className={style.longLine}></div>
-            <li>
-              <Link to="/">Projects</Link>
-            </li>{" "}
-            <div className={style.longLine}></div>
-            <li>
-              <Link to="/">Clients</Link>
-            </li>{" "}
-            <div className={style.longLine}></div>
-            <li>
-              <Link to="/">Brands</Link>
-            </li>{" "}
-            <div className={style.longLine}></div>
-            <li>
-              <Link to="/">Media</Link>
-            </li>{" "}
-            <div className={style.longLine}></div>
-          </ul>
-        </nav>
-      </div>
+
+      {/* Side Drawer */}
+      
     </header>
   );
 }
