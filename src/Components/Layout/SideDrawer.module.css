@@ -4,7 +4,7 @@
   visibility: hidden;
   z-index: 999;
   translate: 100%;
-  transition: 10s linear;
+  transition: 0.3s linear;
   background-color: bisque;
 }
 
