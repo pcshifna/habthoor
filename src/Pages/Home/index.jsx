@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className={style.home}>
       <section className={style.firstSection}>
-        <div>
+        <div className={style.contentWrapper}>
           <div className={style.pri1}>
             <h2>Habtoor International</h2>
           </div>
