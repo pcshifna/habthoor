@@ -227,7 +227,7 @@
   }
 
   .secondSectionHeading h1 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
     font-family: "Courier New", Courier, monospace;
     line-height: inherit;
@@ -243,10 +243,10 @@
   }
   .rightSection {
     padding: 3px 0px;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: lighter;
     font-family: "Courier New", Courier, monospace;
-    word-spacing: -3px;
+    word-spacing: -7px;
     text-align: justify;
   }
   .aboutus_Brief {
