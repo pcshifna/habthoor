@@ -87,9 +87,9 @@ const Home = () => {
             </div>
 
             <div className={style.readmore_Button}>
-              {/* <Link to=""> */}
+              <Link to="">
               <button type="submit">READ MORE</button>
-              {/* </Link> */}
+              </Link>
             </div>
           </section>
         </div>

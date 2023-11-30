@@ -207,18 +207,18 @@
 }
 @media (max-width: 640px) {
   .firstSection {
-    height: 200px;
+    height: 400px;
   }
   .contentWrapper {
-    padding-left: 140px;
-    padding-right: 8px;
-    padding-top: 130px;
-    font-size: 5px;
+    padding-left: 160px;
+   
+    padding-top: 220px;
+    font-size: 4px;
   }
 
   .triangleUp {
-    width: 160px;
-    height: 110px;
+    width: 210px;
+    height: 310px;
   }
 
   /* this is new */
@@ -232,7 +232,7 @@
     font-family: "Courier New", Courier, monospace;
     line-height: inherit;
     word-spacing: -1px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-transform: capitalize;
   }
   .about_wrapper {
@@ -242,10 +242,12 @@
     display: none;
   }
   .rightSection {
-    font-size: 10px;
+    padding: 3px 0px;
+    font-size: 11px;
     font-weight: lighter;
     font-family: "Courier New", Courier, monospace;
-    word-spacing: -1px;
+    word-spacing: -3px;
+    text-align: justify;
   }
   .aboutus_Brief {
     padding: 0px 0px;
