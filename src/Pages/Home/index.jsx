@@ -1,8 +1,10 @@
 import React from "react";
 import style from "./Home.module.css";
-import kitchen2 from "../../assets/kitchen2.png";
-import kitchen3 from "../../assets/kitchen3.png";
-import kitchen1 from "../../assets/kitchen1.png";
+import { Link } from "react-router-dom";
+import kitchen2 from "../../assets/k1 (1).jpg";
+import kitchen3 from "../../assets/k1 (2).jpg";
+import kitchen1 from "../../assets/pexels-elle-hughes-2696064.jpg";
+import kitchen4 from "../../assets/pexels-pixabay-260922.jpg";
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -12,31 +14,31 @@ import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 
+
 const Home = () => {
   return (
     <div className={style.home}>
       <section className={style.firstSection}>
         <div className={style.contentWrapper}>
           <div className={style.pri1}>
-            <h2>Habtoor International</h2>
+            <h2>TOP QUALITY </h2>
           </div>
           <div className={style.pri2}>
-            <h3>is a company fully owned by Mr. Abdul Aziz</h3>
+            <h3>FOOD SERVICE EQUIPMENT &</h3>
           </div>
           <div className={style.pri3}>
-            <h3> Mr. Abdul Aziz Khalifa Bin Hab formed Mr. Abdul Aziz </h3>{" "}
+            <h3> COMMERCIAL KITCHEN SOLUTION PROVIDERS </h3>{" "}
           </div>
           <div className={style.pri4}>
-            <h3>
-              January 1993 with its head office being based in Dubai.Mr. Abdul
-              Aziz
+            {/* <h3>
+              ..................................................................................................................
             </h3>
           </div>
           <div className={style.pri5}>
             <h3>
               With over 23 years of successful services to the industry,Mr.
               Abdul Aziz Abdul Aziz
-            </h3>
+            </h3> */}
           </div>
         </div>
 
@@ -61,6 +63,9 @@ const Home = () => {
             <SwiperSlide>
               <img src={kitchen3} alt="" />
             </SwiperSlide>
+            <SwiperSlide>
+              <img src={kitchen4} alt="" />
+            </SwiperSlide>
           </Swiper>
         </div>
       </section>
@@ -68,25 +73,27 @@ const Home = () => {
       <section className={style.secondSection}>
         <div className={style.secondSectionHeading}>
           <h1>
-            Providing foodservice & commercial laundry equipment solutions since
+            providing food service equipment & commercial kitchen solution since
             1993
           </h1>
         </div>
-        <div className={style.lineHeight}></div>
-        <section className={style.rightSection}>
-          <div>
-            TSSC’s team of experienced professionals delivers comprehensive
-            customer care to the “who’s who” of Dubai’s foodservice and
-            hospitality industries. We deliver everything our clients need to
-            perform at their very best. That’s why we offer complete solutions,
-            including facility design, installation, equipment selection, and
-            operator training.
-          </div>
+        <div className={style.about_wrapper}>
+          <div className={style.lineHeight}></div>
+          <section className={style.rightSection}>
+            <div className={style.aboutus_Brief}>
+              Habtoor  was formed and structured to specialize in the
+              design, supply and installation of fast food and catering
+              equipment for clients and customers operating throughout the U.A.E
+              and surrounding Gulf & Middle East countries.
+            </div>
 
-          <div>
-            <button type="submit">Read More</button>
-          </div>
-        </section>
+            <div className={style.readmore_Button}>
+              <Link to="">
+                <button type="submit">READ MORE</button>
+              </Link>
+            </div>
+          </section>
+        </div>
       </section>
       <section className={style.thirdSection}>
         <div className={style.box}>
