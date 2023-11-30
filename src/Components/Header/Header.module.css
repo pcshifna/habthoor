@@ -79,13 +79,9 @@ header button {
   position: relative;
 }
 
-
-
-
 .onSmallScreen button {
   border: none;
 }
-
 
 @media (max-width: 640px) {
   .onBigScreen {
@@ -105,41 +101,39 @@ header button {
     padding: 5px 5%;
   }
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .onBigScreen ul b {
-  display: flex;
-  gap: 13px;
-  font-size: 5px;
-}
-header {
+    display: flex;
+    gap: 13px;
+    font-size: 5px;
+  }
+  header {
     padding: 5px 5%;
   }
-.logoWrapper img {
+  .logoWrapper img {
     width: 90px;
     height: 80px;
   }
   .contactButton button::before {
-
-  height: 15px;
-  width: 25px;
+    height: 15px;
+    width: 25px;
+  }
 }
-}
-@media (max-width:1024px){
+@media (max-width: 1024px) {
   .onBigScreen ul b {
-  display: flex;
-  gap: 10px;
-  font-size: 19px;
-}
-header {
+    display: flex;
+    gap: 10px;
+    font-size: 19px;
+  }
+  header {
     padding: 5px 10px;
   }
-.logoWrapper img {
+  .logoWrapper img {
     width: 90px;
     height: 80px;
   }
   .contactButton button::before {
- 
-  
-  height: 15px;
-  width: 25px;}
+    height: 15px;
+    width: 25px;
+  }
 }

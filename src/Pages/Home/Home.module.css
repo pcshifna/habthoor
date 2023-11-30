@@ -39,7 +39,6 @@
   object-fit: cover;
 }
 
-
 .secondSection {
   padding: 120px 200px;
 }
@@ -52,9 +51,8 @@
   word-spacing: -10px;
   padding-bottom: 40px;
   text-transform: capitalize;
- 
 }
-.about_wrapper{
+.about_wrapper {
   display: flex;
 }
 .lineHeight {
@@ -62,28 +60,58 @@
   width: 1px;
   height: 150px;
   background-color: #b51827;
-  
 }
-.rightSection{
- 
-  
-font-size: 18px;
+.rightSection {
+  padding: 17px 22px;
+  font-size: 18px;
   font-weight: lighter;
   font-family: "Courier New", Courier, monospace;
   word-spacing: -5px;
- 
 }
-.aboutus_Brief{
-padding: 11px 0px;
-text-align: justify;
+.aboutus_Brief {
+  padding: 11px 0px;
+}
 
-}
-.readmore_Button button{
-  padding: 10px 250px;
-  background-color: #fcb116;
-  border: none;
+.readmore_Button button {
+  padding: 10px 30px;
   color: white;
+  border: none;
+
+  background-color: #fcb116;
+
+  position: relative;
+  isolation: isolate;
 }
+
+.readmore_Button button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #b51827;
+  z-index: -1;
+  transition: width 0.5s;
+}
+.readmore_Button button::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 4px;
+  background-image: url("../../assets/buttonimage.svg");
+  background-size: contain;
+  background-position: center;
+  height: 15px;
+  width: 35px;
+  background-repeat: no-repeat;
+}
+
+.readmore_Button button:hover::after {
+  transition: width 0.6s cubic-bezier(0.58, 1.65, 0.55, 0.65);
+  width: 100%;
+}
+
 /* .box {
   width: 500px;
   height: 300px;
@@ -193,57 +221,51 @@ text-align: justify;
     height: 110px;
   }
 
- /* this is new */
+  /* this is new */
   .secondSection {
-  padding: 15px 20px;
-}
+    padding: 15px 20px;
+  }
 
-.secondSectionHeading h1 {
-  font-size: 15px;
-  font-weight: lighter;
-  font-family: "Courier New", Courier, monospace;
-  line-height: inherit;
-  word-spacing: -1px;
-  padding-bottom: 20px;
-  text-transform: capitalize;
- 
-}
-.about_wrapper{
-  display: flex;
-}
-.lineHeight {
- display: none;
-  
-}
-.rightSection{
- 
-  
-font-size: 10px;
-  font-weight: lighter;
-  font-family: "Courier New", Courier, monospace;
-  word-spacing: -1px;
- 
-}
-.aboutus_Brief{
-padding: 0px 0px;
-padding-bottom: 10px;
+  .secondSectionHeading h1 {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+    line-height: inherit;
+    word-spacing: -1px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .about_wrapper {
+    display: flex;
+  }
+  .lineHeight {
+    display: none;
+  }
+  .rightSection {
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+    word-spacing: -1px;
+  }
+  .aboutus_Brief {
+    padding: 0px 0px;
+    padding-bottom: 10px;
+  }
+  .readmore_Button button {
+    padding: 10px 30px;
+    background-color: #fcb116;
+    border: none;
+    color: white;
+  }
 
-}
-.readmore_Button button{
-  padding: 10px 30px;
-  background-color: #fcb116;
-  border: none;
-  color: white;
-}
-
-.pri1,
-.pri2,
-.pri3,
-.pri4,
-.pri5 {
-  text-align: center;
-  font-size: 8px;
-  font-weight: lighter;
-  font-family: "Courier New", Courier, monospace;
-}
+  .pri1,
+  .pri2,
+  .pri3,
+  .pri4,
+  .pri5 {
+    text-align: center;
+    font-size: 8px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+  }
 }

@@ -14,7 +14,6 @@ import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
 const Home = () => {
   return (
     <div className={style.home}>
@@ -81,16 +80,16 @@ const Home = () => {
           <div className={style.lineHeight}></div>
           <section className={style.rightSection}>
             <div className={style.aboutus_Brief}>
-              Habtoor  was formed and structured to specialize in the
-              design, supply and installation of fast food and catering
-              equipment for clients and customers operating throughout the U.A.E
-              and surrounding Gulf & Middle East countries.
+              Habtoor was formed and structured to specialize in the design,
+              supply and installation of fast food and catering equipment for
+              clients and customers operating throughout the U.A.E and
+              surrounding Gulf & Middle East countries.
             </div>
 
             <div className={style.readmore_Button}>
-              <Link to="">
-                <button type="submit">READ MORE</button>
-              </Link>
+              {/* <Link to=""> */}
+              <button type="submit">READ MORE</button>
+              {/* </Link> */}
             </div>
           </section>
         </div>
