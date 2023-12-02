@@ -1,6 +1,7 @@
 .home {
   z-index: -1;
 }
+/* first section */
 .firstSection {
   background-color: #b51827;
   width: 100%;
@@ -38,13 +39,25 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* second section */
 .secondSection {
-  padding: 120px 200px;
+  padding: 70px 150px;
 }
-
+.secondSectionHeading{
+  display: flex;
+  
+}
+.since1993 {
+  padding-left: 10px;
+  color: #b51827;
+   font-weight:bold;
+  font-family: "Courier New", Courier, monospace;
+  line-height: inherit;
+  word-spacing: -10px;
+   
+}
 .secondSectionHeading h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: lighter;
   font-family: "Courier New", Courier, monospace;
   line-height: inherit;
@@ -112,54 +125,185 @@
   width: 100%;
 }
 
-/* .box {
-  width: 500px;
-  height: 300px;
-  position: relative;
-  isolation: isolate;
+/* third section */
+.thirdSection {
+  padding: 0px 150px;
   display: flex;
+  flex-direction: column;
 }
-.box:hover {
+.thirdSection h1 {
+  font-size: 50px;
+  color: #b51827;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  line-height: inherit;
+  word-spacing: -10px;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+}
+.grid_Container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 30px;
+}
+.image_Box {
+  position: relative;
+  transition: opacity 1s;
+  grid-column: span 2;
+}
+.big_image img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.image_Box:hover {
   border: 5px solid #b51827;
 }
-.box img:hover {
+.image_Box:hover .big_image img {
   opacity: 0.5;
 }
-.box .underImage:hover {
-  align-items: center;
-}
-.box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-/* .box img::after {
-  content: "";
-  bottom: 0;
-  left: 4px;
+
+.hover_Image img {
   position: absolute;
-  background-image: url("../../assets/kitchen3.png");
-  border: 2px solid rgb(0, 255, 115);
-  background-size: contain;
-  background-position: center;
-  height: 15px;
-  width: 35px;
-  background-repeat: no-repeat;
- z-index: 999;
-} */
-/* .underImage {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: 7px;
+  left: 0px;
   width: 100px;
-  height: 70px;
-} */
-.thirdSection {
-  display: none;
+  height: 80px;
+  transition: transform 3s;
 }
+
+.image_Box:hover .hover_Image img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(150%, -100%);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
+.second_Image_Box {
+  position: relative;
+  transition: opacity 1s;
+
+  grid-row: span 2;
+}
+.second_Big_image img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.second_Image_Box:hover {
+  border: 5px solid #b51827;
+}
+.second_Image_Box:hover .second_Big_image img {
+  opacity: 0.5;
+}
+
+.second_hover_Image img {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.second_Image_Box:hover .second_hover_Image img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(45%, -260%);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
+.image_Box3 {
+  position: relative;
+  transition: opacity 1s;
+}
+.big_image3 img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.image_Box3:hover {
+  border: 5px solid #b51827;
+}
+.image_Box3:hover .big_image3 img {
+  opacity: 0.5;
+}
+
+.hover_Image3 img {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.image_Box3:hover .hover_Image3 img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(150px, -100px);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
+.image_Box4 {
+  position: relative;
+  transition: opacity 1s;
+}
+.big_image4 img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.image_Box4:hover {
+  border: 5px solid #b51827;
+}
+.image_Box4:hover .big_image4 img {
+  opacity: 0.5;
+}
+
+.hover_Image4 img {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.image_Box4:hover .hover_Image4 img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(150px, -100px);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .firstSection {
-    height: 250px;
+    height: 500px;
   }
   .contentWrapper {
     padding-left: 350px;
@@ -175,34 +319,136 @@
 }
 @media (max-width: 1024px) {
   .firstSection {
-    height: 310px;
+    height: 500px;
   }
   .contentWrapper {
-    padding-left: 48%;
-    padding-right: 1%;
-    padding-top: 17%;
+    padding-left: 390px;
+    padding-right: 0;
+    padding-top: 250px;
     font-size: 11px;
+  }
+  .contentWrapper h3 {
+    font-size: 27px;
+    line-height: inherit;
+    word-spacing: -3px;
   }
 
   .triangleUp {
     width: 520px;
-    height: 220px;
+    height: 410px;
+  }
+
+  .secondSection {
+    padding: 35px 20px;
+  }
+
+  .secondSectionHeading h1 {
+    font-size: 40px;
+
+    word-spacing: -3px;
+
+    padding-bottom: 45px;
+  }
+  .about_wrapper {
+    display: flex;
+  }
+  .lineHeight {
+    margin-left: 70px;
+  }
+  .rightSection {
+    padding: 0px 25px;
+    font-size: 23px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+    word-spacing: -3px;
+    text-align: justify;
+  }
+  .aboutus_Brief {
+    padding: 0px 0px;
+    padding-bottom: 10px;
+  }
+  .readmore_Button button {
+    padding: 10px 30px;
+    background-color: #fcb116;
+    border: none;
+    color: white;
+  }
+
+  .pri1,
+  .pri2,
+  .pri3,
+  .pri4,
+  .pri5 {
+    text-align: center;
+    font-size: 8px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
   }
 }
 @media (max-width: 820px) {
   .firstSection {
-    height: 310px;
+    height: 500px;
   }
   .contentWrapper {
-    padding-left: 45%;
-    padding-right: 1%;
-    padding-top: 22%;
-    font-size: 9px;
+    padding-left: 260px;
+    font-weight: lighter;
+    padding-top: 250px;
+    padding-right: 0px;
+  }
+  .contentWrapper h3 {
+    font-size: 20px;
+    line-height: inherit;
+    word-spacing: -1px;
+  }
+  .triangleUp {
+    width: 350px;
+    height: 410px;
+  }
+  .secondSection {
+    padding: 35px 20px;
   }
 
-  .triangleUp {
-    width: 420px;
-    height: 220px;
+  .secondSectionHeading h1 {
+    font-size: 30px;
+
+    word-spacing: -3px;
+
+    padding-bottom: 45px;
+  }
+  .about_wrapper {
+    display: flex;
+  }
+  .lineHeight {
+    margin-left: 70px;
+  }
+  .rightSection {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+    word-spacing: -11px;
+    text-align: justify;
+  }
+  .aboutus_Brief {
+    padding: 0px 0px;
+    padding-bottom: 10px;
+  }
+  .readmore_Button button {
+    padding: 10px 30px;
+    background-color: #fcb116;
+    border: none;
+    color: white;
+  }
+
+  .pri1,
+  .pri2,
+  .pri3,
+  .pri4,
+  .pri5 {
+    text-align: center;
+    font-size: 8px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
   }
 }
 @media (max-width: 640px) {
@@ -211,11 +457,15 @@
   }
   .contentWrapper {
     padding-left: 160px;
-   
-    padding-top: 220px;
-    font-size: 4px;
+    word-spacing: -1px;
+    padding-top: 230px;
   }
 
+  .contentWrapper h3 {
+    font-size: 9px;
+    line-height: inherit;
+    word-spacing: -1px;
+  }
   .triangleUp {
     width: 210px;
     height: 310px;

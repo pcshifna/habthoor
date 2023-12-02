@@ -20,7 +20,7 @@ const Home = () => {
       <section className={style.firstSection}>
         <div className={style.contentWrapper}>
           <div className={style.pri1}>
-            <h2>TOP QUALITY </h2>
+            <h3>TOP QUALITY </h3>
           </div>
           <div className={style.pri2}>
             <h3>FOOD SERVICE EQUIPMENT &</h3>
@@ -72,8 +72,8 @@ const Home = () => {
       <section className={style.secondSection}>
         <div className={style.secondSectionHeading}>
           <h1>
-            providing food service equipment & commercial kitchen solution since
-            1993
+            providing food service equipment & commercial kitchen solution
+            <span className={style.since1993}>Since 1993</span>
           </h1>
         </div>
         <div className={style.about_wrapper}>
@@ -88,19 +88,117 @@ const Home = () => {
 
             <div className={style.readmore_Button}>
               <Link to="">
-              <button type="submit">READ MORE</button>
+                <button type="submit">READ MORE</button>
               </Link>
             </div>
           </section>
         </div>
       </section>
-      <section className={style.thirdSection}>
-        <div className={style.box}>
-          <img src={kitchen1} alt="" />
 
-          <div className={style.underImage}>
-            <img src={kitchen3} alt="" />
+      <section className={style.thirdSection}>
+        <div>
+          <h1>Most Outstanding Projects</h1>
+        </div>
+        <div className={style.grid_Container}>
+          <div className={style.image_Box}>
+            <div className={style.big_image}>
+              <img src={kitchen1} alt="" />
+            </div>
+
+            <div className={style.hover_Image}>
+              <img src={kitchen3} alt="" />
+            </div>
           </div>
+
+          <div className={style.second_Image_Box}>
+            <div className={style.second_Big_image}>
+              <img src={kitchen1} alt="" />
+            </div>
+
+            <div className={style.second_hover_Image}>
+              <img src={kitchen3} alt="" />
+            </div>
+          </div>
+
+          <div className={style.image_Box3}>
+            <div className={style.big_image3}>
+              <img src={kitchen1} alt="" />
+            </div>
+
+            <div className={style.hover_Image3}>
+              <img src={kitchen3} alt="" />
+            </div>
+          </div>
+
+          <div className={style.image_Box4}>
+            <div className={style.big_image4}>
+              <img src={kitchen1} alt="" />
+            </div>
+
+            <div className={style.hover_Image4}>
+              <img src={kitchen3} alt="" />
+            </div>
+          </div>
+
+          {/*<div className={style.image_Box}>
+            <div className={style.first_Image}>
+              <div className={style.big_image}>
+                <img src={kitchen1} alt="" />
+              </div>
+
+              <div className={style.hover_Image}>
+                <img src={kitchen3} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className={style.image_Box}>
+            <div className={style.first_Image}>
+              <div className={style.big_image}>
+                <img src={kitchen1} alt="" />
+              </div>
+
+              <div className={style.hover_Image}>
+                <img src={kitchen3} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className={style.image_Box}>
+            <div className={style.first_Image}>
+              <div className={style.big_image}>
+                <img src={kitchen1} alt="" />
+              </div>
+
+              <div className={style.hover_Image}>
+                <img src={kitchen3} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className={style.image_Box}>
+            <div className={style.first_Image}>
+              <div className={style.big_image}>
+                <img src={kitchen1} alt="" />
+              </div>
+
+              <div className={style.hover_Image}>
+                <img src={kitchen3} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className={style.image_Box}>
+            <div className={style.first_Image}>
+              <div className={style.big_image}>
+                <img src={kitchen1} alt="" />
+              </div>
+
+              <div className={style.hover_Image}>
+                <img src={kitchen3} alt="" />
+              </div>
+            </div>
+          </div> */}
         </div>
       </section>
     </div>
