@@ -43,18 +43,16 @@
 .secondSection {
   padding: 70px 150px;
 }
-.secondSectionHeading{
+.secondSectionHeading {
   display: flex;
-  
 }
 .since1993 {
   padding-left: 10px;
   color: #b51827;
-   font-weight:bold;
+  font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   line-height: inherit;
   word-spacing: -10px;
-   
 }
 .secondSectionHeading h1 {
   font-size: 50px;
@@ -300,7 +298,69 @@
   /* translate: 150px -100px 50px; */
   object-fit: cover;
 }
-
+.text_Box {
+  position: relative;
+  isolation: isolate;
+   padding: 50px 50px;
+}
+.text_Box::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -3px;
+  background-image: url("../../assets/buttonimage.svg");
+  background-size: contain;
+  background-position: center;
+  height: 25px;
+  width: 150px;
+  background-repeat: no-repeat;
+}
+.more_projects {
+ 
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  text-align: justify;
+  word-spacing: -11px;
+  
+}
+.more_projects p{
+  padding-bottom: 30px;
+}
+.more_projects button{
+  padding: 15px 30px;
+    background-color: #fcb116;
+    border: none;
+    color: white;
+    position: relative;
+    isolation: isolate;
+}
+.more_projects button::after{
+  content: "";
+position: absolute;
+ top: -1px;
+  right: 2px;
+  background-image: url("../../assets/buttonimage.svg");
+  background-size: contain;
+  background-position: center;
+  height: 15px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+.more_projects button::before{
+ content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #b51827;
+  z-index: -1;
+  transition: width 0.5s;
+}
+.more_projects button:hover::before {
+  transition: width 0.6s cubic-bezier(0.58, 1.65, 0.55, 0.65);
+  width: 100%;
+}
 @media (max-width: 768px) {
   .firstSection {
     height: 500px;
@@ -520,4 +580,206 @@
     font-weight: lighter;
     font-family: "Courier New", Courier, monospace;
   }
+/* third section */
+  .thirdSection {
+ padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.thirdSection h1 {
+  font-size: 23px;
+  color: #b51827;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  line-height: inherit;
+  word-spacing: -10px;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+}
+.grid_Container {
+  display: flex;
+ flex-direction: column;
+}
+.image_Box {
+  position: relative;
+  transition: opacity 1s;
+  grid-column: span 2;
+}
+.big_image img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.image_Box:hover {
+  border: 5px solid #b51827;
+}
+.image_Box:hover .big_image img {
+  opacity: 0.5;
+}
+
+.hover_Image img {
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.image_Box:hover .hover_Image img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(30%, -110%);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
+.second_Image_Box {
+  position: relative;
+  transition: opacity 1s;
+
+  grid-row: span 2;
+}
+.second_Big_image img {
+   width: 100%;
+  height: 290px;
+  object-fit: cover;
+  
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.second_Image_Box:hover {
+  border: 5px solid #b51827;
+}
+.second_Image_Box:hover .second_Big_image img {
+  opacity: 0.5;
+}
+
+.second_hover_Image img {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.second_Image_Box:hover .second_hover_Image img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(30%, -110%);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
+.image_Box3 {
+  position: relative;
+  transition: opacity 1s;
+}
+.big_image3 img {
+   width: 100%;
+  height: 290px;
+ 
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.image_Box3:hover {
+  border: 5px solid #b51827;
+}
+.image_Box3:hover .big_image3 img {
+  opacity: 0.5;
+}
+
+.hover_Image3 img {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.image_Box3:hover .hover_Image3 img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(30px, -110px);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+
+.image_Box4 {
+  position: relative;
+  transition: opacity 1s;
+}
+.big_image4 img {
+   width: 100%;
+  height: 290px;
+  object-fit: cover;
+
+  object-position: center;
+  transition: transform 1s;
+}
+
+.image_Box4:hover {
+  border: 5px solid #b51827;
+}
+.image_Box4:hover .big_image4 img {
+  opacity: 0.5;
+}
+
+.hover_Image4 img {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100px;
+  height: 80px;
+  transition: transform 3s;
+}
+
+.image_Box4:hover .hover_Image4 img {
+  opacity: 1;
+  width: 200px;
+  transform: translate(300px, -110px);
+
+  /* translate: 150px -100px 50px; */
+  object-fit: cover;
+}
+.text_Box {
+  position: relative;
+  isolation: isolate;
+   padding: 40px 35px;
+}
+.text_Box::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -3px;
+  background-image: url("../../assets/buttonimage.svg");
+  background-size: contain;
+  background-position: center;
+  height: 25px;
+  width: 150px;
+  background-repeat: no-repeat;
+}
+.more_projects {
+ 
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  text-align: justify;
+  word-spacing: -11px;
+  
+}
+
 }

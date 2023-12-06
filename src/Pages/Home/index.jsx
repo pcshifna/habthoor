@@ -140,31 +140,29 @@ const Home = () => {
             </div>
           </div>
 
+          <div className={style.image_Box}>
+            <div className={style.big_image}>
+              <img src={kitchen1} alt="" />
+            </div>
+
+            <div className={style.hover_Image}>
+              <img src={kitchen3} alt="" />
+            </div>
+          </div>
+
+          <div className={style.text_Box}>
+            <div className={style.more_projects}>
+              <p>
+                We know our clients need an experienced provider who can guide
+                their projects to completion
+              </p>
+              <div><button type="submit">MORE PROJECTS</button></div>
+            </div>
+
+            
+          </div>
+
           {/*<div className={style.image_Box}>
-            <div className={style.first_Image}>
-              <div className={style.big_image}>
-                <img src={kitchen1} alt="" />
-              </div>
-
-              <div className={style.hover_Image}>
-                <img src={kitchen3} alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div className={style.image_Box}>
-            <div className={style.first_Image}>
-              <div className={style.big_image}>
-                <img src={kitchen1} alt="" />
-              </div>
-
-              <div className={style.hover_Image}>
-                <img src={kitchen3} alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div className={style.image_Box}>
             <div className={style.first_Image}>
               <div className={style.big_image}>
                 <img src={kitchen1} alt="" />
