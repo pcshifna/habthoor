@@ -156,47 +156,46 @@ const Home = () => {
                 We know our clients need an experienced provider who can guide
                 their projects to completion
               </p>
-              <div><button type="submit">MORE PROJECTS</button></div>
-            </div>
-
-            
-          </div>
-
-          {/*<div className={style.image_Box}>
-            <div className={style.first_Image}>
-              <div className={style.big_image}>
-                <img src={kitchen1} alt="" />
-              </div>
-
-              <div className={style.hover_Image}>
-                <img src={kitchen3} alt="" />
+              <div>
+                <button type="submit">MORE PROJECTS</button>
               </div>
             </div>
           </div>
-
-          <div className={style.image_Box}>
-            <div className={style.first_Image}>
-              <div className={style.big_image}>
-                <img src={kitchen1} alt="" />
-              </div>
-
-              <div className={style.hover_Image}>
-                <img src={kitchen3} alt="" />
-              </div>
-            </div>
+        </div>
+      </section>
+      <section className={style.forthSection}>
+        <div className={style.brandsWrapper}>
+          <img src={kitchen4} alt="" />
+        </div>
+        <div className={style.brandsContentWrapper}>
+          <div>Our Brands</div>
+          <div>KITCHEN EQUIPMENT</div>
+          <div> LAUNDRY EQUIPMENT</div>
+        </div>
+        <div className={style.homeBrandCardSecton}>
+          <div className={style.homeBrandCardInner}>
+            <div>sfsfs</div>
+            <div></div>
+            <div></div>
           </div>
 
-          <div className={style.image_Box}>
-            <div className={style.first_Image}>
-              <div className={style.big_image}>
-                <img src={kitchen1} alt="" />
-              </div>
+          <div className={style.homeBrandCardInner}>
+            <div>dvddvf</div>
+            <div></div>
+            <div></div>
+          </div>
 
-              <div className={style.hover_Image}>
-                <img src={kitchen3} alt="" />
-              </div>
-            </div>
-          </div> */}
+          <div className={style.homeBrandCardInner}>
+            <div>dfdvfd</div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div className={style.homeBrandCardInner}>
+            <div>dfdvfd</div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </section>
     </div>

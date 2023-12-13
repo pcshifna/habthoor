@@ -125,7 +125,9 @@
 
 /* third section */
 .thirdSection {
-  padding: 0px 150px;
+  padding-right:  150px;
+  padding-left: 150px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -782,4 +784,67 @@ position: absolute;
   
 }
 
+}
+.forthSection{
+ width: 100%;
+
+}
+.brandsWrapper img{
+  width: 100%;
+  height: 720px;
+object-fit: cover;
+object-position: center;
+position: relative;
+
+}
+/* .brandsWrapper img::before {
+  content: "kkkkkk";
+  position: absolute;
+  inset: 0;
+  
+  color: black; 
+  font-size: 100px;
+
+} */
+.brandsWrapper {
+  width: 100%;
+  height: 720px;
+  overflow: hidden; /* This prevents the card section from overflowing the image */
+}
+.brandsContentWrapper{
+  position:absolute ;
+  padding: 50px 50px;
+  color: white;
+  font-size: 50px; 
+  display: flex;
+}
+.homeBrandCardSecton{
+  position: absolute;
+  top: 360%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   z-index: 1;
+ 
+  display: flex;
+ justify-content: center;
+     width: 100%;
+     height: 300px;
+      background-color: rgba(153, 153, 153, 0.7);
+      
+      display: grid;
+      grid-template-columns: repeat(4,250px);
+       gap: 40px;
+      
+}
+
+.homeBrandCardInner{
+ border: 10px solid rgba(175, 170, 170, 0.3);
+  
+
+  background-color:white;
+      transition: 15s;
+}
+.homeBrandCardInner:hover{
+  
+  border: none;
 }
