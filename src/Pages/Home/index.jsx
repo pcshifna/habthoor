@@ -163,13 +163,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className={style.forthSection}>
-        <div className={style.brandsWrapper}>
-          <img src={kitchen4} alt="" />
-        </div>
+      <section
+        
+        className={style.forthSection}
+      >
         <div className={style.brandsContentWrapper}>
-          <div>Our Brands</div>
-          <div>KITCHEN EQUIPMENT</div>
+          <div className={style.ourBrandWrapper}>Our Brands</div>
+          <div className={style.kitchenEquipmentWraper}>KITCHEN EQUIPMENT</div>
           <div> LAUNDRY EQUIPMENT</div>
         </div>
         <div className={style.homeBrandCardSecton}>

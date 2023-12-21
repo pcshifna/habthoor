@@ -125,7 +125,7 @@
 
 /* third section */
 .thirdSection {
-  padding-right:  150px;
+  padding-right: 150px;
   padding-left: 150px;
   padding-bottom: 150px;
   display: flex;
@@ -303,7 +303,7 @@
 .text_Box {
   position: relative;
   isolation: isolate;
-   padding: 50px 50px;
+  padding: 50px 50px;
 }
 .text_Box::before {
   content: "";
@@ -318,28 +318,26 @@
   background-repeat: no-repeat;
 }
 .more_projects {
- 
   font-family: "Courier New", Courier, monospace;
   font-size: 22px;
   text-align: justify;
   word-spacing: -11px;
-  
 }
-.more_projects p{
+.more_projects p {
   padding-bottom: 30px;
 }
-.more_projects button{
+.more_projects button {
   padding: 15px 30px;
-    background-color: #fcb116;
-    border: none;
-    color: white;
-    position: relative;
-    isolation: isolate;
+  background-color: #fcb116;
+  border: none;
+  color: white;
+  position: relative;
+  isolation: isolate;
 }
-.more_projects button::after{
+.more_projects button::after {
   content: "";
-position: absolute;
- top: -1px;
+  position: absolute;
+  top: -1px;
   right: 2px;
   background-image: url("../../assets/buttonimage.svg");
   background-size: contain;
@@ -348,8 +346,8 @@ position: absolute;
   width: 50px;
   background-repeat: no-repeat;
 }
-.more_projects button::before{
- content: "";
+.more_projects button::before {
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -582,220 +580,214 @@ position: absolute;
     font-weight: lighter;
     font-family: "Courier New", Courier, monospace;
   }
-/* third section */
+  /* third section */
   .thirdSection {
- padding: 15px 20px;
-  display: flex;
-  flex-direction: column;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdSection h1 {
+    font-size: 23px;
+    color: #b51827;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    line-height: inherit;
+    word-spacing: -10px;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+  }
+  .grid_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image_Box {
+    position: relative;
+    transition: opacity 1s;
+    grid-column: span 2;
+  }
+  .big_image img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+
+    object-position: center;
+    transition: transform 1s;
+  }
+
+  .image_Box:hover {
+    border: 5px solid #b51827;
+  }
+  .image_Box:hover .big_image img {
+    opacity: 0.5;
+  }
+
+  .hover_Image img {
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100px;
+    height: 80px;
+    transition: transform 3s;
+  }
+
+  .image_Box:hover .hover_Image img {
+    opacity: 1;
+    width: 200px;
+    transform: translate(30%, -110%);
+
+    /* translate: 150px -100px 50px; */
+    object-fit: cover;
+  }
+
+  .second_Image_Box {
+    position: relative;
+    transition: opacity 1s;
+
+    grid-row: span 2;
+  }
+  .second_Big_image img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+
+    object-position: center;
+    transition: transform 1s;
+  }
+
+  .second_Image_Box:hover {
+    border: 5px solid #b51827;
+  }
+  .second_Image_Box:hover .second_Big_image img {
+    opacity: 0.5;
+  }
+
+  .second_hover_Image img {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100px;
+    height: 80px;
+    transition: transform 3s;
+  }
+
+  .second_Image_Box:hover .second_hover_Image img {
+    opacity: 1;
+    width: 200px;
+    transform: translate(30%, -110%);
+
+    /* translate: 150px -100px 50px; */
+    object-fit: cover;
+  }
+
+  .image_Box3 {
+    position: relative;
+    transition: opacity 1s;
+  }
+  .big_image3 img {
+    width: 100%;
+    height: 290px;
+
+    object-fit: cover;
+
+    object-position: center;
+    transition: transform 1s;
+  }
+
+  .image_Box3:hover {
+    border: 5px solid #b51827;
+  }
+  .image_Box3:hover .big_image3 img {
+    opacity: 0.5;
+  }
+
+  .hover_Image3 img {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100px;
+    height: 80px;
+    transition: transform 3s;
+  }
+
+  .image_Box3:hover .hover_Image3 img {
+    opacity: 1;
+    width: 200px;
+    transform: translate(30px, -110px);
+
+    /* translate: 150px -100px 50px; */
+    object-fit: cover;
+  }
+
+  .image_Box4 {
+    position: relative;
+    transition: opacity 1s;
+  }
+  .big_image4 img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+
+    object-position: center;
+    transition: transform 1s;
+  }
+
+  .image_Box4:hover {
+    border: 5px solid #b51827;
+  }
+  .image_Box4:hover .big_image4 img {
+    opacity: 0.5;
+  }
+
+  .hover_Image4 img {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100px;
+    height: 80px;
+    transition: transform 3s;
+  }
+
+  .image_Box4:hover .hover_Image4 img {
+    opacity: 1;
+    width: 200px;
+    transform: translate(300px, -110px);
+
+    /* translate: 150px -100px 50px; */
+    object-fit: cover;
+  }
+  .text_Box {
+    position: relative;
+    isolation: isolate;
+    padding: 40px 35px;
+  }
+  .text_Box::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    background-image: url("../../assets/buttonimage.svg");
+    background-size: contain;
+    background-position: center;
+    height: 25px;
+    width: 150px;
+    background-repeat: no-repeat;
+  }
+  .more_projects {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    text-align: justify;
+    word-spacing: -11px;
+  }
 }
-.thirdSection h1 {
-  font-size: 23px;
-  color: #b51827;
-  font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-  line-height: inherit;
-  word-spacing: -10px;
-  padding-bottom: 40px;
-  text-transform: capitalize;
-}
-.grid_Container {
-  display: flex;
- flex-direction: column;
-}
-.image_Box {
-  position: relative;
-  transition: opacity 1s;
-  grid-column: span 2;
-}
-.big_image img {
+.forthSection {
   width: 100%;
-  height: 290px;
-  object-fit: cover;
-
-  object-position: center;
-  transition: transform 1s;
 }
-
-.image_Box:hover {
-  border: 5px solid #b51827;
-}
-.image_Box:hover .big_image img {
-  opacity: 0.5;
-}
-
-.hover_Image img {
-  position: absolute;
-  bottom: 7px;
-  left: 0px;
-  width: 100px;
-  height: 80px;
-  transition: transform 3s;
-}
-
-.image_Box:hover .hover_Image img {
-  opacity: 1;
-  width: 200px;
-  transform: translate(30%, -110%);
-
-  /* translate: 150px -100px 50px; */
-  object-fit: cover;
-}
-
-.second_Image_Box {
-  position: relative;
-  transition: opacity 1s;
-
-  grid-row: span 2;
-}
-.second_Big_image img {
-   width: 100%;
-  height: 290px;
-  object-fit: cover;
-  
-
-  object-position: center;
-  transition: transform 1s;
-}
-
-.second_Image_Box:hover {
-  border: 5px solid #b51827;
-}
-.second_Image_Box:hover .second_Big_image img {
-  opacity: 0.5;
-}
-
-.second_hover_Image img {
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  width: 100px;
-  height: 80px;
-  transition: transform 3s;
-}
-
-.second_Image_Box:hover .second_hover_Image img {
-  opacity: 1;
-  width: 200px;
-  transform: translate(30%, -110%);
-
-  /* translate: 150px -100px 50px; */
-  object-fit: cover;
-}
-
-.image_Box3 {
-  position: relative;
-  transition: opacity 1s;
-}
-.big_image3 img {
-   width: 100%;
-  height: 290px;
- 
-  object-fit: cover;
-
-  object-position: center;
-  transition: transform 1s;
-}
-
-.image_Box3:hover {
-  border: 5px solid #b51827;
-}
-.image_Box3:hover .big_image3 img {
-  opacity: 0.5;
-}
-
-.hover_Image3 img {
-  position: absolute;
-  bottom: 10px;
-  left: 0px;
-  width: 100px;
-  height: 80px;
-  transition: transform 3s;
-}
-
-.image_Box3:hover .hover_Image3 img {
-  opacity: 1;
-  width: 200px;
-  transform: translate(30px, -110px);
-
-  /* translate: 150px -100px 50px; */
-  object-fit: cover;
-}
-
-.image_Box4 {
-  position: relative;
-  transition: opacity 1s;
-}
-.big_image4 img {
-   width: 100%;
-  height: 290px;
-  object-fit: cover;
-
-  object-position: center;
-  transition: transform 1s;
-}
-
-.image_Box4:hover {
-  border: 5px solid #b51827;
-}
-.image_Box4:hover .big_image4 img {
-  opacity: 0.5;
-}
-
-.hover_Image4 img {
-  position: absolute;
-  bottom: 10px;
-  left: 0px;
-  width: 100px;
-  height: 80px;
-  transition: transform 3s;
-}
-
-.image_Box4:hover .hover_Image4 img {
-  opacity: 1;
-  width: 200px;
-  transform: translate(300px, -110px);
-
-  /* translate: 150px -100px 50px; */
-  object-fit: cover;
-}
-.text_Box {
-  position: relative;
-  isolation: isolate;
-   padding: 40px 35px;
-}
-.text_Box::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: -3px;
-  background-image: url("../../assets/buttonimage.svg");
-  background-size: contain;
-  background-position: center;
-  height: 25px;
-  width: 150px;
-  background-repeat: no-repeat;
-}
-.more_projects {
- 
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
-  text-align: justify;
-  word-spacing: -11px;
-  
-}
-
-}
-.forthSection{
- width: 100%;
-
-}
-.brandsWrapper img{
+.brandsWrapper img {
   width: 100%;
   height: 720px;
-object-fit: cover;
-object-position: center;
-position: relative;
-
+  object-fit: cover;
+  object-position: center;
+  position: relative;
 }
 /* .brandsWrapper img::before {
   content: "kkkkkk";
@@ -811,40 +803,58 @@ position: relative;
   height: 720px;
   overflow: hidden; /* This prevents the card section from overflowing the image */
 }
-.brandsContentWrapper{
-  position:absolute ;
-  padding: 50px 50px;
-  color: white;
-  font-size: 50px; 
-  display: flex;
+
+.forthSection {
+  position: relative;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
 }
-.homeBrandCardSecton{
+.forthSection::before {
+  content: "";
   position: absolute;
-  top: 360%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-   z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: grayscale(100%);
+  background-image: url("../../assets/pexels-pixabay-260922.jpg");
+   /* backgroundImage: `url(${kitchen4})`, */
+  /* Replace with your image path */
+  opacity: 0.6; /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.brandsContentWrapper {
  
+  padding: 70px 150px;
+  color: white;
+  font-size: 40px;
   display: flex;
- justify-content: center;
-     width: 100%;
-     height: 300px;
-      background-color: rgba(153, 153, 153, 0.7);
-      
-      display: grid;
-      grid-template-columns: repeat(4,250px);
-       gap: 40px;
-      
+  gap:10px;
+}
+.kitchenEquipmentWraper{
+padding-left: 160px;
+word-wrap: break-all;
+}
+.homeBrandCardSecton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 40px;
 }
 
-.homeBrandCardInner{
- border: 10px solid rgba(175, 170, 170, 0.3);
+.homeBrandCardInner {
+  border: 10px solid rgba(175, 170, 170, 0.3);
   
 
-  background-color:white;
-      transition: 15s;
+  background-color: white;
+  transition: 0.6s;
 }
-.homeBrandCardInner:hover{
-  
-  border: none;
+.homeBrandCardInner:hover {
+  border-color: transparent;
 }
